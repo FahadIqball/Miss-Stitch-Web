@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas-light: #FAF8F5;
+  --color-surface-white: #FFFFFF;
+  --color-text-primary: #1F1F24;
+  --color-text-secondary: #66666E;
+  --color-rani-pink: #E61A6B;
+  --color-rani-pink-hover: #CF145E;
+  --color-accent-emerald: #0A5C36;
+  --color-accent-emerald-light: #EBF5F0;
+  --color-accent-ochre: #F3A712;
+  --color-accent-ochre-light: #FEF6E7;
+  --color-border-gold: #D4AF37;
+  --color-border-gold-light: #FAF5E6;
+  --color-border-muted: #E5E2DC;
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --background: #FAF8F5;
+  --foreground: #1F1F24;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Luxury Editorial Typography */
+h1, h2, h3, h4, .font-serif-luxury {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B89726;
+}
+
+/* Refined borders and button effects */
+.btn-rani {
+  background-color: #E61A6B;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: all 0.2s ease-in-out;
+}
+.btn-rani:hover {
+  background-color: #CF145E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(230, 26, 107, 0.25);
+}
+
+.btn-gold-outline {
+  border: 1px solid #D4AF37;
+  color: #1F1F24;
+  background-color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.btn-gold-outline:hover {
+  background-color: #FAF5E6;
+  border-color: #B89726;
+  transform: translateY(-1px);
+}
+
+.gold-accent-line {
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  height: 1px;
+}
+
+/* Micro animations */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  animation: ticker 28s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
