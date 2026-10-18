@@ -115,26 +115,10 @@ If this project uses additional keys for email, API calls, or analytics, add the
 
 ## Screenshots
 
-Add your final screenshots later in the `public` folder or an appropriate assets directory. The examples below are placeholders for now.
+<img width="1917" height="907" alt="Home" src="https://github.com/user-attachments/assets/a1f39ecf-bd6e-45a1-811d-45bf1ef89621" />
+<img width="1917" height="906" alt="missstitch categories" src="https://github.com/user-attachments/assets/7c66904f-9b9c-4492-9ab6-3a88e56f29f3" />
+<img width="1917" height="907" alt="missstitch digital silai" src="https://github.com/user-attachments/assets/540f7fdc-38d3-4f91-8971-ffa6a0734d43" />
 
-```md
-![Homepage hero](/screenshots/homepage.png)
-![Category section](/screenshots/categories.png)
-![Product catalog](/screenshots/catalog.png)
-![Tailoring process](/screenshots/tailoring-process.png)
-```
-
-Suggested structure for future screenshots:
-
-```text
-public/
-├── screenshots/
-│   ├── homepage.png
-│   ├── categories.png
-│   ├── catalog.png
-│   ├── tailoring-process.png
-│   └── mobile-view.png
-```
 
 ## Deployment
 
